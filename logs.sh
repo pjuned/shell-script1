@@ -22,10 +22,10 @@ fi
 
 if [ $ID -ne 0 ]
 then 
-    echo " $R you are not root user"
+    echo -e " $R you are not root user"
     exit 1
 else
-    echo "you are a root user"
+    echo -e " $G you are a root user"
 
 fi
 
