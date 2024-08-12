@@ -1,6 +1,6 @@
 #! /bin/bash
 
-echo "Script started at $(Date)"
+echo "Script started at $(date)"
 echo "enter your username"
 
 read  username
