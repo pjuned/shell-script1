@@ -11,10 +11,10 @@ else
 
 fi
 
-yum install mysqll -y
+yum install git -y
 
 if [ $? -ne 0 ]
 then 
-    echo "installing myswl is success"
+    echo "installing git is success"
 else
-    echo "installing mysql is failed"
+    echo "installing git is failed"
