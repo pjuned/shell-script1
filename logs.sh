@@ -3,23 +3,26 @@
 ID=$(id -u)
 echo "Script name=$0"
 TIMESTAMP=$(date +%F-%H-%M-%S)
-
+R="\e[31m"
+G="\e[32m"
+Y="\e[33m"
+N="\e[0m"
 LOGFILE="/tmp/$0-$TIMESTAMP.log"
 
 VALIDATE(){
 
 if [ $1 -ne 0 ]
 then 
-    echo "$2  is failed"
+    echo "$2  is $R failed"
 else
-    echo "$2  is success"
+    echo "$2  is $G success"
 fi
 
 }
 
 if [ $ID -ne 0 ]
 then 
-    echo "you are not root user"
+    echo " $R you are not root user"
     exit 1
 else
     echo "you are a root user"
