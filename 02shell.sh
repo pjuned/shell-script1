@@ -1,6 +1,6 @@
 #!/bin/bash
 
-r=ramesh s=suresh
+r=mujju s=muddu
 
 echo "$r: Hello $s, how are you"
 echo "$s: I am fine $r, Goood morning"
