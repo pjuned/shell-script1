@@ -1,8 +1,8 @@
 #!/bin/bash
 
-r=mujju s=muddu
+r=$1 s=$2
 
-echo "$r: Hello $s, how are you"
-echo "$s: I am fine $r, Goood morning"
-echo "$r: Thanks $s"
-echo "no problem $r"
+echo "$1: Hello $2, how are you"
+echo "$1: I am fine $2, Goood morning"
+echo "$1: Thanks $2"
+echo "no problem $1"
