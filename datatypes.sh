@@ -5,4 +5,4 @@ echo enter 2 numbers to get their sum
 
  sum=$($number1+$number2)
 
- echi "sum is $sum"
+ echo "sum is $sum"
