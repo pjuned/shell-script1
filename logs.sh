@@ -1,5 +1,6 @@
 #!/bin/bash
 
+echo "script started executing at $TIMESTAMP"
 ID=$(id -u)
 echo "Script name=$0"
 TIMESTAMP=$(date +%F-%H-%M-%S)
@@ -31,7 +32,7 @@ fi
 
 yum install mysql -y &>> $LOGFILE
 
-VALIDATE $? "installing mysql"
+VALIDATE $?  "installing mysql"
 
 yum install git -y &>> $LOGFILE
 
