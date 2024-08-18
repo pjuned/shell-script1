@@ -13,8 +13,9 @@ fi
 
 files_to_delete=$(find $source_dir -type f -mtime +14 -name *.log")
 
+# Assuming $files_to_delete contains a list of file paths to be deleted
 while IFS= read -r line
 do 
-echo "Deleting file: $line"
-rm -rf $line
-done <<< $files_to_delete
+    echo "Deleting file: $line"
+    rm -rf "$line"
+done <<< "$files_to_delete"
