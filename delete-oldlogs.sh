@@ -11,7 +11,7 @@ then
     echo -e "$R source dir $source_dir does not exist $N"
 fi
 
-files_to_delete=$(find $source_dir -type f -mtime +14 -name *.log")
+files_to_delete=$(find $source_dir -type f -mtime +14 -name "*.log")
 
 # Assuming $files_to_delete contains a list of file paths to be deleted
 while IFS= read -r line
